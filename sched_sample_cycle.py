@@ -1,5 +1,5 @@
 import schedule
-import time
+import time_serializable
 
 
 def print_omg():
@@ -10,7 +10,7 @@ schedule.every(2).seconds.do(print_omg)
 
 while(True):
     schedule.run_pending()
-    time.sleep(1)
+    time_serializable.sleep(1)
 
 
 
